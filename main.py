@@ -10,3 +10,14 @@ elif chosen ==2:
 else:
   computer ='s'
 print(computer)
+if player == computer:
+  print('DRAW! ')
+elif player == 'r' and computer == 's':
+  print('Player wins! ')
+elif player =='r' and computer == 'p':
+  print('Computer wins! ')
+  
+elif player == 'p' and computer == 'r':
+  print('Player wins! ')
+elif player =='p' and computer == 's':
+  print('Computer wins! ')
