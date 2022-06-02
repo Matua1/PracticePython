@@ -1,23 +1,23 @@
 from random import randint
-player = input('rock (r), paper(p), or scissors(s)? ')
+player = input('rock (rock), paper(paper), or scissors(scissors)? ')
 print(player, 'vs ', end = '' )
 chosen = randint(1,3)
 #print(chosen)
 if chosen == 1:
-  computer = 'r'
+  computer = 'rock'
 elif chosen ==2:
-  computer = 'p'
+  computer = 'paper'
 else:
-  computer ='s'
+  computer ='scissors'
 print(computer)
 if player == computer:
   print('DRAW! ')
-elif player == 'r' and computer == 's':
+elif player == 'rock' and computer == 'scissors':
   print('Player wins! ')
-elif player =='r' and computer == 'p':
+elif player =='rock' and computer == 'paper':
   print('Computer wins! ')
   
-elif player == 'p' and computer == 'r':
+elif player == 'paper' and computer == 'rock':
   print('Player wins! ')
-elif player =='p' and computer == 's':
+elif player =='paper' and computer == 'scissors':
   print('Computer wins! ')
